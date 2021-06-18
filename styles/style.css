@@ -54,6 +54,7 @@ main {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  pointer-events: none;
 }
 
 .main-text {
@@ -96,12 +97,13 @@ main {
 .main-text button {
   padding: 2rem 3rem;
   background: #333333;
-  color: #ffffff;
+  color: white;
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.035em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 footer {
