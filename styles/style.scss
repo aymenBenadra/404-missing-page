@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Space Mono", monospace;
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    color: #797979;
+  }
+}
+
+header {
+  font-family: "Inconsolata", monospace;
+  width: 100%;
+  min-height: 10vh;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.08em;
+  font-family: Inconsolata;
+}
+
+main {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.scarecrow {
+  flex: 1 1 40rem;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 1 40rem;
+  color: #333333;
+  font-weight: bold;
+
+  h2 {
+    font-size: 6.4rem;
+    line-height: 9.5rem;
+    letter-spacing: -0.035em;
+    margin: 2rem 0rem;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    width: 60%;
+    color: #4f4f4f;
+    margin-bottom: 5rem;
+  }
+
+  button {
+    padding: 2rem 3rem;
+    background: #333333;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+  }
+}
+
+footer {
+  min-height: 5vh;
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-align: center;
+  color: #bdbdbd;
+}
+
+@media screen and (max-width: 800px) {
+  header,
+  main,
+  footer {
+    padding: 4rem;
+  }
+
+  .main-text p {
+    width: 100%;
+  }
+}

@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Space Mono", monospace;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #797979;
+}
+
+header {
+  font-family: "Inconsolata", monospace;
+  width: 100%;
+  min-height: 10vh;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.08em;
+  font-family: Inconsolata;
+}
+
+main {
+  min-height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.scarecrow {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.scarecrow img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  color: #333333;
+  font-weight: bold;
+}
+
+.main-text h2 {
+  font-size: 6.4rem;
+  line-height: 9.5rem;
+  letter-spacing: -0.035em;
+  margin: 2rem 0rem;
+}
+
+.main-text p {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  width: 60%;
+  color: #4f4f4f;
+  margin-bottom: 5rem;
+}
+
+.main-text button {
+  padding: 2rem 3rem;
+  background: #333333;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+footer {
+  min-height: 5vh;
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-align: center;
+  color: #bdbdbd;
+}
+
+@media screen and (max-width: 800px) {
+  header,
+  main,
+  footer {
+    padding: 4rem;
+  }
+  .main-text p {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
